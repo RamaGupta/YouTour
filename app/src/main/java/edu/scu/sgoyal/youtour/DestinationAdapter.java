@@ -15,11 +15,11 @@ import java.io.InputStream;
 import java.util.List;
 
 
-public class Destination_Adapter extends ArrayAdapter<Destination>
+public class DestinationAdapter extends ArrayAdapter<Destination>
 {
     private final List<Destination> Destinations;
     boolean fav= false;
-    public Destination_Adapter(Context context, int resource, List<Destination> Destinations) {
+    public DestinationAdapter(Context context, int resource, List<Destination> Destinations) {
         super(context, resource, Destinations);
         this.Destinations = Destinations;
     }

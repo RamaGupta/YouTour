@@ -1,14 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context=".MainActivity">
+      tools:context=".DestinationListActivity">
     <item
         android:id="@+id/Uninstall"
         android:orderInCategory="200"
         app:showAsAction="never"
         android:title="Uninstall"/>
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
+    <item android:id="@+id/tourDestinations"
+          android:title="Tour Destinations"
+          android:orderInCategory="10"
+          app:showAsAction="never"/>
+    <item android:id="@+id/gallery"
+          android:title="Gallery"
+          android:orderInCategory="20"
+          app:showAsAction="never"/>
+    <item android:id="@+id/faq"
+          android:title="FAQ"
+          android:orderInCategory="40"
+          app:showAsAction="never"/>
+    <item android:id="@+id/survey"
+          android:title="Survey"
           android:orderInCategory="100"
           app:showAsAction="never"/>
 

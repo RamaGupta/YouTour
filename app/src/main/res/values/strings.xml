@@ -8,5 +8,6 @@
     <string name="title_activity_maps2">Map</string>
     <string name="title_activity_becaon_sense">BecaonSenseActivity</string>
     <string name="title_activity_becon_sense">BeconSenseActivity</string>
+    <string name="title_activity_main1">MainActivity1</string>
 
 </resources>

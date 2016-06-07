@@ -1,7 +1,7 @@
 package edu.scu.sgoyal.youtour;
 
 /**
- * Created by echessa on 7/17/15.
+ * Created by shubhamgoyal on 5/24/16.
  */
 public final class Config {
 
@@ -9,5 +9,7 @@ public final class Config {
     }
 
     public static final String YOUTUBE_API_KEY = "YOUR API KEY";
+
+
 
 }
