@@ -365,14 +365,15 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback
                         PackageManager.PERMISSION_GRANTED)
         {
             mMap.setMyLocationEnabled(true);
-//            ui.setMyLocationButtonEnabled(true);
+            ui.setMyLocationButtonEnabled(true);
         } else
         {
             Toast.makeText(this, "error in map", Toast.LENGTH_LONG).show();
         }
 //
-//        ui.setCompassEnabled(true);
-//        ui.setZoomControlsEnabled(true);
+        ui.setAllGesturesEnabled(true);
+        ui.setCompassEnabled(true);
+        ui.setZoomControlsEnabled(true);
 
 //        Projection projection = mMap.getProjection();
 //        markers.get(0).setInfoWindowAnchor();

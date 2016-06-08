@@ -48,8 +48,8 @@
         <activity android:name=".Survey"/>
         <activity android:name=".Faq"/>
         <activity android:name=".Rating"/>
-        <activity android:name=".YouTubeTesting">
-        </activity>
+        <!--<activity android:name=".YouTubeTesting">-->
+        <!--</activity>-->
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main1"

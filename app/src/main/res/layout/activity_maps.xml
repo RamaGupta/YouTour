@@ -13,17 +13,17 @@
         android:layout_weight="1.01"/>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
+            android:id="@+id/startTourButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/scuColor"
             android:text="Start Tour"
-            android:id="@+id/startTourButton"
-            android:textColor="@color/white"
-            android:background="@color/scuColor"/>
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 </LinearLayout>
