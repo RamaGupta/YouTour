@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 ;import java.util.ArrayList;
@@ -75,7 +77,10 @@ public class ViewDestinationDetailActivity extends MenuActivity
                 comments);
         myListView.setAdapter(aa);
 
-
+        ScrollView scroll = (ScrollView) findViewById(R.id.detailsScroll);
+        scroll.fullScroll(ScrollView.FOCUS_UP);
+        scroll.setFocusableInTouchMode(true);
+        scroll.setDescendantFocusability(ViewGroup.FOCUS_BEFORE_DESCENDANTS);
 
         YouTubeFragment fragment = new YouTubeFragment(d);
         FragmentManager manager = getSupportFragmentManager();

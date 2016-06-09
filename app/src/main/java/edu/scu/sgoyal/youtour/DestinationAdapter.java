@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.io.IOException;
@@ -39,34 +40,12 @@ public class DestinationAdapter extends ArrayAdapter<Destination>
         textView.setText(Destinations.get(position).getName());
 
         ImageView imageView = (ImageView) row.findViewById(R.id.icon);
-        final ImageButton menu= (ImageButton) row.findViewById(R.id.menu);
-        if(fav)
-        {
-            menu.setImageResource(R.drawable.favourite);
-        }
-        else
-        {
-            menu.setImageResource(R.drawable.not_favourite);
-        }
-        menu.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                fav = !fav;
-                if(fav)
-                {
-                    menu.setImageResource(R.drawable.favourite);
-                }
-                else
-                {
-                    menu.setImageResource(R.drawable.not_favourite);
-                }
-            }
-        });
+
+        RatingBar ratingBar = (RatingBar) row.findViewById(R.id.rating);
 
         try {
             String filename = Destinations.get(position).getImage();
+            ratingBar.setRating((float) Destinations.get(position).getAverageRating());
             InputStream inputStream = getContext().getAssets().open(filename);
             Drawable drawable = Drawable.createFromStream(inputStream, null);
             imageView.setImageDrawable(drawable);

@@ -435,12 +435,8 @@ public class MapsActivity extends MenuActivity implements OnMapReadyCallback
 //                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 i.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
 //                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                showNotification("Reached " + d.getName(), " Welocome to " + d.getName());
-//                showNotification(
-//                        "Your gate closes in 47 minutes.",
-//                        "Current security wait time is 15 minutes, "
-//                                + "and it's a 5 minute walk from security to the gate. "
-//                                + "Looks like you've got plenty of time!");
+                showNotification("Reached " + d.getName(), " Welocome to " + d.getName());
+
                 stopNavigation();
                 stopAllBeaconMonitoring();
                 startActivity(i);

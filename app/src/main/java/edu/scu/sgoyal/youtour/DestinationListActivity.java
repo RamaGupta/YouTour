@@ -39,7 +39,5 @@ static List<Destination> destinations;
 
             }
         });
-
-
     }}
 

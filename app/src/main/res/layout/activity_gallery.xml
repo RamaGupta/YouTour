@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="#ffffffff"
               android:orientation="vertical"
               android:padding="9dp">
 
@@ -16,7 +15,8 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#44aaaaaa">
+        android:background="@android:color/background_light"
+        android:fillViewport="false">
 
         <LinearLayout
             android:id="@+id/viewgroup"
